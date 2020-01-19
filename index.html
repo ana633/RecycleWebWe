@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <h1 style="font-family:serif;" align="middle">Recycling</h1>
+      <link rel="stylesheet" href="main.css" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+  <body bgcolor="#D3D3D3">
+      <div id="nav" class="nav">
+          <a class="active" href="#home"><i class="fa fa-home"></i>  Home</a>
+          <a href="about.html"><i class="fa fa-line-chart"></i>  About</a>
+          <a href="resources.html"><i class="fa fa-recycle"></i>  Resources</a>
+      </div>
+
+    <div class="row">
+        <div class="column">
+          <img src="https://media.fromthegrapevine.com/assets/images/2016/10/shutterstock_448263469%20med.jpg.824x0_q71_crop-scale.jpg" width="400" height="280" onclick="myFunction(this);">
+        </div>
+        <div class ="column">
+            <img src="http://rubysun.ca/wp-content/uploads/2018/02/plastic-1024x681.jpeg" width="400" height="280" onclick="myFunction(this);">
+        </div>
+        <div class = "column">
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/10/20/10/istock-629554844.jpg" width="400" height="280" onclick="myFunction(this);">
+        </div>
+
+        <div class ="container1">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+
+
+        <script type="text/javascript">
+          function myFunction(imgs){
+            var expandedImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+          }
+
+        </script>
+
+    </div>
+
+    <div class="current">
+    <h2>Current Plastic Situation</h2>
+    <h4>How much plastic and waste do we produced?</h4>
+    <p>In 1950 the world produced only 2 million tonnes per year.
+      <br>By 2015, annual production had increased nearly 200-fold,
+      <br>reaching 381 million tonnes.
+      <br>In 2010, primary plastic production was 270 million tonnes,
+      <br>yet plastic waste was 275 million tonnes.</p>
+    <h4> How much oil do we use to make plastic?</h4>
+      <p>Estimates vary by source, but tend to converge on a range
+        <br>between 4 to 8 percent of global oil consumption.</p>
+      </div>
+
+
+  </body>
+
+
+</html>
